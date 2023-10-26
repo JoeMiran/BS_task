@@ -1,12 +1,52 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="utf-8"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
-        <title> Apresentação </title>
-    </head>
-    <body>
-        <h1>Olá, mundo!</h1>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brainstorm</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+
+            <div class="fundo">
+
+            </div>
+    
+            <div class="perfil">
+                <img src="img/icon.jpeg" alt="perfil" class="profile-img">    
+                <h3>Anakin Skywalker</h3>
+                <p>Lord Sith</p>
+            </div>
+            
+            <div class="container-text">
+                <div class="num">
+                    <h4>Mortes</h4>
+                    <p>1.231</p>
+                </div>
+                <div class="num">
+                    <h4>Vitórias</h4>
+                    <p>2.839</p>
+                </div>
+                <div class="num">
+                    <h4>Derrotas</h4>
+                    <p>1</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 35,
+            speed: 400,
+            glare:true,
+            "max-glare": 1,
+        });
+    </script>
+</body>
 </html>
